@@ -29,6 +29,7 @@ function App() {
         id="username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
+        required
       />
       <label htmlFor="email">Email:</label>
       <input
@@ -36,6 +37,7 @@ function App() {
         id="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
       />
  <label htmlFor="password">Password:</label>
       <input
@@ -43,6 +45,7 @@ function App() {
         id="password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+        pattern = "[a-z0-5]{8,}"
       />
       <label htmlFor="phone">Phone:</label>
       <input
